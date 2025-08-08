@@ -70,8 +70,8 @@ carregar_variaveis() {
   if [ -f $ARQUIVO_VARIAVEIS ]; then
     source $ARQUIVO_VARIAVEIS
   else
-    empresa="Equipechat"
-    nome_titulo="Equipechat"
+    empresa="equipechat"
+    nome_titulo="equipechat"
   fi
 }
 
