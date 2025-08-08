@@ -36,8 +36,8 @@ dummy_carregar_variaveis() {
   if [ -f $ARQUIVO_VARIAVEIS ]; then
     source $ARQUIVO_VARIAVEIS
   else
-    empresa="multiflow"
-    nome_titulo="MultiFlow"
+    empresa="Equipechat"
+    nome_titulo="Equipechat"
   fi
 }
 

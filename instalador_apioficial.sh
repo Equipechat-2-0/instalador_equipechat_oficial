@@ -34,7 +34,7 @@ banner() {
   echo "╔══════════════════════════════════════════════════════════════╗"
   echo "║                    INSTALADOR API OFICIAL                    ║"
   echo "║                                                              ║"
-  echo "║                    MultiFlow System                          ║"
+  echo "║                   Equipechat System                          ║"
   echo "╚══════════════════════════════════════════════════════════════╝"
   printf "${WHITE}"
   echo
@@ -45,8 +45,8 @@ carregar_variaveis() {
   if [ -f $ARQUIVO_VARIAVEIS ]; then
     source $ARQUIVO_VARIAVEIS
   else
-    empresa="multiflow"
-    nome_titulo="MultiFlow"
+    empresa="Equipechat"
+    nome_titulo="Equipechat"
   fi
 }
 

@@ -34,7 +34,7 @@ banner() {
   printf "██║██║╚██╗██║╚════██║   ██║   ██╔══██║██║     ██║     ╚════██║██║███╗██║██║\n"
   printf "██║██║ ╚████║███████╗   ██║   ██║  ██║███████╗███████╗███████╗╚███╔███╔╝███████╗\n"
   printf "╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝ ╚══╝╚══╝ ╚══════╝\n"
-  printf "                                INSTALADOR 3.0\n"
+  printf "                                INSTALADOR 1.0\n"
   printf "\n\n"
 }
 
@@ -70,8 +70,8 @@ carregar_variaveis() {
   if [ -f $ARQUIVO_VARIAVEIS ]; then
     source $ARQUIVO_VARIAVEIS
   else
-    empresa="multiflow"
-    nome_titulo="MultiFlow"
+    empresa="Equipechat"
+    nome_titulo="Equipechat"
   fi
 }
 
@@ -162,10 +162,9 @@ menu() {
     2)
       atualizar_base
       ;;
-    3)
-      instalar_transcricao_audio_nativa
+    
       ;;
-    4)
+    3)
       instalar_api_oficial
       ;;
     0)
