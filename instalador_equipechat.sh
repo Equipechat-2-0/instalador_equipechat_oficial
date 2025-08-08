@@ -28,12 +28,12 @@ fi
 banner() {
   printf " ${BLUE}"
   printf "\n\n"
-  printf "██╗███╗   ██╗███████╗████████╗ █████╗ ██╗     ██╗     ███████╗██╗    ██╗██╗\n"
-  printf "██║████╗  ██║██╔════╝╚══██╔══╝██╔══██╗██║     ██║     ██╔════╝██║    ██║██║\n"
-  printf "██║██╔██╗ ██║███████    ██║   ███████║██║     ██║     ███████╗██║ █╗ ██║██║\n"
-  printf "██║██║╚██╗██║╚════██║   ██║   ██╔══██║██║     ██║     ╚════██║██║███╗██║██║\n"
-  printf "██║██║ ╚████║███████╗   ██║   ██║  ██║███████╗███████╗███████╗╚███╔███╔╝███████╗\n"
-  printf "╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝ ╚══╝╚══╝ ╚══════╝\n"
+ printf ${CYAN_LIGHT}"    _____ _____ _   _ ___________ _____ _____  _   _   ___ _____ \n";
+printf ${CYAN_LIGHT}"   |  ___|  _  | | | |_   _| ___ \  ___/  __ \| | | | / _ \_   _| \n";
+printf ${CYAN_LIGHT}"   | |__ | | | | | | | | | | |_/ / |__ | /  \/| |_| |/ /_\ \| |  \n";
+printf ${CYAN_LIGHT}"   |  __|| | | | | | | | | |  __/|  __|| |    |  _  ||  _  || |  \n";
+printf ${CYAN_LIGHT}"   | |___\ \/' / |_| |_| |_| |   | |___| \__/\| | | || | | || |  \n";
+printf ${CYAN_LIGHT}"   \____/ \_/\_\\___/ \___/\_|   \____/ \____/\_| |_/\_| |_/\_/  \n";
   printf "                                INSTALADOR 1.0\n"
   printf "\n\n"
 }
@@ -71,7 +71,7 @@ carregar_variaveis() {
     source $ARQUIVO_VARIAVEIS
   else
     empresa="Equipechat"
-    nome_titulo="Equipechat"
+    nome_titulo="MultiFlow"
   fi
 }
 
@@ -149,8 +149,6 @@ menu() {
     printf "${WHITE} Selecione abaixo a opção desejada: \n"
     echo
     printf "   [${BLUE}1${WHITE}] Instalar ${nome_titulo}\n"
-    printf "   [${BLUE}2${WHITE}] Atualizar ${nome_titulo}\n"
-    printf "   [${BLUE}3${WHITE}] Instalar Transcrição de Audio Nativa\n"
     printf "   [${BLUE}4${WHITE}] Instalar API Oficial\n"
     printf "   [${BLUE}0${WHITE}] Sair\n"
     echo
@@ -159,12 +157,9 @@ menu() {
     1)
       verificar_arquivos_existentes
       ;;
-    2)
-      atualizar_base
-      ;;
+   
     
-      ;;
-    3)
+    2)
       instalar_api_oficial
       ;;
     0)
