@@ -71,7 +71,7 @@ carregar_variaveis() {
     source $ARQUIVO_VARIAVEIS
   else
     empresa="Equipechat"
-    nome_titulo="MultiFlow"
+    nome_titulo="Equipechat"
   fi
 }
 
